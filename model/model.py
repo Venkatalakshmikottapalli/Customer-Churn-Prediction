@@ -81,5 +81,5 @@ if __name__ == "__main__":
 
     # Save the trained model 
     model_path = os.path.join(os.path.dirname(__file__), 'churn_rf_model.pkl')
-    joblib.dump(model, model_path)
+    joblib.dump(model, model_path, compress=3)
     print(f"Model saved to {model_path}")
